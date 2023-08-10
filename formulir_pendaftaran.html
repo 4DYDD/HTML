@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIM - HAIDIR ADITYA</title>
+</head>
+
+<body>
+
+    <style>
+        *,
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+            font-family: Comic Sans MS;
+        }
+
+        tr,
+        td {
+            border: 1px solid red;
+            border-radius: 5px;
+
+            width: 30vmin;
+            height: 10vmin;
+            /* padding: 10px; */
+        }
+
+        tr td input,
+        tr th button {
+            position: relative;
+            /* width: 100%;
+            height: 100%; */
+            padding: 2vmin;
+            margin: 2.5vmin;
+            border-radius: 5px;
+            border: 1.5px solid crimson;
+        }
+
+        tr th button {
+            width: 30vmin;
+            background-color: antiquewhite;
+
+
+            font-family: Comic Sans MS;
+        }
+
+        table {
+            position: relative;
+            padding: 5px;
+        }
+    </style>
+
+    <table cellmargin="20px" style="text-align: center; border: 2px solid rgb(255, 162, 63); border-radius: 5px;">
+        <tr>
+            <td>
+                <p>Nama</p>
+            </td>
+            <td>
+                <input type="text" name="nama" id="nama">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Password</p>
+            </td>
+            <td>
+                <input type="text" name="password" id="password">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Email</p>
+            </td>
+            <td>
+                <input type="text" name="email" id="email">
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">
+                <button type="submit" name="submit" id="submit"
+                    onclick="alert('Nama \t: '+document.getElementById('nama').value +'\nPassword \t: '+document.getElementById('password').value + '\nEmail \t: '+document.getElementById('email').value)">SUBMIT</button>
+            </th>
+        </tr>
+    </table>
+</body>
+
+</html>
