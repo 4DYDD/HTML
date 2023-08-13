@@ -11,23 +11,30 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    flex-wrap: wrap;
 }
 
 .container {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
     width: 80vmax;
-    height: 80vmax;
+    padding: 5px;
+    gap: 5px;
+
+    border: 1px solid black;
+    background-color: white;
+    margin: 10px;
 }
 
-.card--satu {
+.card--satu,
+.card--dua,
+.card--tiga,
+.card--empat {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 
 
@@ -53,18 +60,6 @@ body {
 
 /* kasih jarak mank */
 
-
-.card--dua {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 80vmax;
-    height: 80vmax;
-
-    gap: 5px;
-}
-
 .card--dua .alamat,
 .card--dua .input--alamat {
     width: 50vmin;
@@ -83,17 +78,6 @@ body {
 /* kasih jarak mank */
 
 
-.card--tiga {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 80vmax;
-    height: 80vmax;
-
-    gap: 5px;
-}
-
 .card--tiga .email,
 .card--tiga .input--email {
     width: 50vmin;
@@ -111,17 +95,6 @@ body {
 
 /* kasih jarak mank */
 
-
-.card--empat {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 80vmax;
-    height: 80vmax;
-
-    gap: 5px;
-}
 
 .card--empat .password,
 .card--empat .input--password {
