@@ -23,7 +23,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    width: 60vmax;
+    width: 400px;
     padding: 1vmin;
 
     border: 2px solid rgb(255, 140, 0);
@@ -40,11 +40,12 @@ body {
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 
-    width: 50vmax;
-    padding: 1vmin;
+    width: 400px;
+    height: 35px;
+    padding: 5px;
 
     border: 2px solid rgb(255, 140, 0);
     border-radius: 5px;
@@ -79,6 +80,8 @@ body {
     border: 1.5px solid tomato;
     border-radius: 3px;
 
+    font-size: 85%;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,10 +113,14 @@ body {
     border: 2px solid rgb(149, 88, 19);
     border-radius: 5px;
 
+    font-family: Century Gothic;
+    font-size: 85%;
+    font-weight: 600;
+
     display: flex;
     justify-content: center;
     align-items: center;
 
-    width: 40%;
-    height: 5vmax;
+    width: 50%;
+    height: 95%
 }
