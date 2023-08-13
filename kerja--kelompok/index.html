@@ -32,9 +32,24 @@
     </div>
 
     <div class="container--row">
-        <button class="tombol--kirim">KIRIM</button>
+        <button class="tombol--kirim" onclick="kirimkan()">KIRIM</button>
         <button class="tombol--ulang">ULANG</button>
     </div>
+
+    <script>
+        let nama = document.getElementsByClassName('input--nama');
+        let alamat = document.getElementsByClassName('input--alamat');
+        let email = document.getElementsByClassName('input--email');
+        let password = document.getElementsByClassName('input--password');
+        function kirimkan() {
+
+            alert(`
+            Nama : ${nama[0].value}
+            Alamat : ${alamat[0].value}
+            Email : ${email[0].value}
+            Password : ${password[0].value}`)
+        }   
+    </script>
 </body>
 
 </html>
