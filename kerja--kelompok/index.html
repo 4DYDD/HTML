@@ -33,7 +33,7 @@
 
     <div class="container--row">
         <button class="tombol--kirim" onclick="kirimkan()">KIRIM</button>
-        <button class="tombol--ulang">ULANG</button>
+        <button class="tombol--ulang" onclick="resetkan()">ULANG</button>
     </div>
 
     <script>
@@ -41,14 +41,21 @@
         let alamat = document.getElementsByClassName('input--alamat');
         let email = document.getElementsByClassName('input--email');
         let password = document.getElementsByClassName('input--password');
-        function kirimkan() {
 
+        function kirimkan() {
             alert(`
             Nama : ${nama[0].value}
             Alamat : ${alamat[0].value}
             Email : ${email[0].value}
             Password : ${password[0].value}`)
-        }   
+        }
+
+        function resetkan() {
+            const reset = [] = document.getElementsByTagName('input')
+            for (let i = 0; i < reset.length; i++) {
+                reset[i].value = '';
+            }
+        }
     </script>
 </body>
 
