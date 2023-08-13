@@ -23,7 +23,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    width: 80vmax;
+    width: 60vmax;
     padding: 1vmin;
 
     border: 2px solid rgb(255, 140, 0);
@@ -43,7 +43,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
 
-    width: 80vmax;
+    width: 50vmax;
     padding: 1vmin;
 
     border: 2px solid rgb(255, 140, 0);
