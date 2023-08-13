@@ -23,8 +23,8 @@ body {
     justify-content: center;
     align-items: center;
 
-    width: 400px;
-    padding: 1vmin;
+    width: 70vmin;
+    padding: 5px;
 
     border: 2px solid rgb(255, 140, 0);
     border-radius: 5px;
@@ -43,8 +43,8 @@ body {
     justify-content: space-between;
     align-items: center;
 
-    width: 400px;
-    height: 35px;
+    width: 70vmin;
+
     padding: 5px;
 
     border: 2px solid rgb(255, 140, 0);
@@ -61,6 +61,7 @@ body {
 .card--dua,
 .card--tiga,
 .card--empat {
+    position: relative;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -80,14 +81,13 @@ body {
     border: 1.5px solid tomato;
     border-radius: 3px;
 
-    font-size: 85%;
+    width: 30%;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    width: 40%;
-    height: 5vmax;
+    flex-grow: 0.5;
 }
 
 .card--satu .input--nama,
@@ -98,23 +98,25 @@ body {
     border: 1.5px solid tomato;
     border-radius: 3px;
 
+    width: 40%;
+    font-size: 16px;
+
     font-family: Century Gothic;
     text-align: center;
 
-    width: 60%;
-    height: 5vmax;
+    flex-grow: 1;
 }
 
 
 .tombol--kirim,
 .tombol--ulang {
+    position: relative;
     color: white;
     background-color: rgb(255, 104, 44);
     border: 2px solid rgb(149, 88, 19);
     border-radius: 5px;
 
     font-family: Century Gothic;
-    font-size: 85%;
     font-weight: 600;
 
     display: flex;
@@ -122,5 +124,5 @@ body {
     align-items: center;
 
     width: 50%;
-    height: 95%
+    height: 10vmin;
 }
