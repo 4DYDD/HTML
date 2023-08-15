@@ -75,13 +75,6 @@ h1 {
     margin-bottom: 60px;
 }
 
-h1 span {
-    position: relative;
-    top: 15px;
-    font-family: 'Chiller';
-    font-size: 100px;
-}
-
 .footer {
     font-size: 30px;
     font-style: italic;
@@ -89,6 +82,7 @@ h1 span {
 
 @media (max-width: 576px) {
     .headernyah {
+        margin-top: 20px;
         margin-bottom: 0px;
     }
 
@@ -125,6 +119,6 @@ h1 span {
     }
 
     .isinyah {
-        padding: 10px;
+        padding: 20px;
     }
 }
