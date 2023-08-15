@@ -16,8 +16,6 @@ body {
     justify-content: center;
     align-items: center;
 
-    width: 100vw;
-
     font-family: 'Gill Sans MT';
 }
 
@@ -31,8 +29,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    width: 100vw;
 
 }
 
@@ -76,6 +72,12 @@ h1 {
 }
 
 .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
     font-size: 30px;
     font-style: italic;
 }
@@ -119,6 +121,6 @@ h1 {
     }
 
     .isinyah {
-        padding: 20px;
+        padding: 10px;
     }
 }
