@@ -17,7 +17,6 @@ body {
 .cerita {
     background: url(../../footage/bg_kertas_majapahit.jpg) repeat-y center;
     background-size: cover;
-    background-attachment: scroll;
     margin-bottom: 2px;
     padding: 20px;
 
