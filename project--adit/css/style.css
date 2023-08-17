@@ -17,6 +17,8 @@ body {
     align-items: center;
 
     font-family: Skranji;
+    letter-spacing: 0.2px;
+    word-spacing: 0.5px;
 }
 
 .cerita {
@@ -38,7 +40,7 @@ div p {
     font-size: 30px;
     margin: 5px;
     text-align: center;
-    opacity: 0.8;
+    opacity: 1;
 
     text-shadow: 0px 0px 1px black, 0px 0px 0.5px white;
 }
@@ -46,6 +48,7 @@ div p {
 div p span {
     font-weight: 600;
     font-size: 20px;
+    letter-spacing: 1px;
     opacity: 0.8;
     text-align: center;
 }
@@ -61,8 +64,8 @@ div p img {
 }
 
 h1 {
-    opacity: 0.7;
-    text-shadow: 0px 0px 2px white, 0px 0px 2px white, 0px 0px 2px white, 0px 0px 4px rgb(147, 98, 13), 0px 0px 4px rgb(147, 98, 13);
+    opacity: 1;
+    text-shadow: 0px 0px 1.5px rgb(62, 41, 5), 0px 0px 4px rgb(0, 0, 0);
     padding: 5px;
     font-size: 60px;
     font-family: Yatra One;
@@ -81,34 +84,48 @@ h1 {
 }
 
 @media (max-width: 576px) {
+
+    .cerita {
+        padding: 0px;
+    }
+
     .headernyah {
-        margin-top: 20px;
-        margin-bottom: 0px;
+        margin-top: 8%;
+        margin-bottom: 1%;
     }
 
-    h1 {
-        font-size: 50px;
-        margin-bottom: 20px;
+    .headernyah p {
+        font-size: 110%;
+        opacity: 0.8;
     }
 
-    div p img {
+    .headernyah h1 {
+        font-size: 250%;
+        margin-bottom: 5%;
+        opacity: 0.9;
+        color: rgb(46, 34, 6);
+    }
+
+    .isinyah p img {
         position: relative;
-        width: 350px;
-        border-radius: 2px 2px 2px 2px;
+        width: 100%;
+        border-radius: 4px;
         filter: blur(0px);
-        box-shadow: 0px 0px 4px rgb(85, 63, 15), 0px 0px 4px rgb(85, 63, 15), 0px 0px 6px rgb(1, 1, 0);
+        box-shadow: 0px 0px 1px 0.5px rgb(65, 48, 11), 0px 0px 5px 0.5px rgb(0, 0, 0);
         transition: all 0.5s ease-out;
     }
 
-    div p {
-        font-size: 15px;
+    .isinyah p {
+        font-size: 95%;
+        width: 90%;
+        opacity: 0.8;
+        margin: auto;
+
+        text-shadow: 0px 0px 1.5px black;
     }
 
-    div p span {
-        font-weight: 600;
-        font-size: 15px;
-        opacity: 0.8;
-        text-align: center;
+    .isinyah p span {
+        font-size: 90%;
     }
 
     div {
@@ -116,10 +133,23 @@ h1 {
     }
 
     .footer {
-        font-size: 15px;
+        border-top: 3px solid black;
+        border-radius: 10px 10px 0px 0px;
+        width: 95%;
+        text-align: center;
+    }
+
+    .footer p {
+        width: 100%;
+        font-size: 50%;
+    }
+
+    .footer p span {
+        font-size: 100%;
+        color: rgb(40, 22, 1);
     }
 
     .isinyah {
-        padding: 10px;
+        padding: 0px;
     }
 }
