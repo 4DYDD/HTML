@@ -83,6 +83,8 @@ h1 {
     font-style: italic;
 }
 
+
+
 @media (max-width: 576px) {
 
     .cerita {
@@ -109,10 +111,10 @@ h1 {
     .isinyah p img {
         position: relative;
         width: 100%;
-        border-radius: 4px;
-        filter: blur(0px);
-        box-shadow: 0px 0px 1px 0.5px rgb(65, 48, 11), 0px 0px 5px 0.5px rgb(0, 0, 0);
-        transition: all 0.5s ease-out;
+        border-radius: 50%;
+        filter: brightness(5);
+        opacity: 0;
+        transition: all 0.7s ease-out;
     }
 
     .isinyah p {
@@ -128,7 +130,18 @@ h1 {
         text-shadow: 0px 0px 1.5px black;
     }
 
-    .isinyah p span {
+    .isinyah p span.biru {
+        font-size: 90%;
+        letter-spacing: 3px;
+        padding: 10px 0px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 2.5px 0.5px rgb(130, 100, 0);
+        background-image: radial-gradient(250px 150px, rgba(255, 140, 0, 0.7) 30%, rgba(255, 230, 0, 0.6));
+        color: rgb(87, 41, 0);
+        text-shadow: 0px 0px 0.5px white, 0px 0px 0.5px white, 0px 0px 0.5px white;
+    }
+
+    .isinyah p span.ilustrasi {
         font-size: 90%;
     }
 
