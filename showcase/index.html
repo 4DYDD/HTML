@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>membuat samting</title>
+</head>
+
+<body>
+
+    <style>
+        *,
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            gap: 20px;
+
+            height: 100vh;
+        }
+
+        .card {
+            width: 50vw;
+            background-color: wheat;
+            box-shadow: 0px 0px 5px 0.5px rgba(0, 0, 0, 0.5);
+
+            font-family: Century Gothic;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            padding: 20px;
+
+            border-radius: 10px;
+        }
+
+        .card p {
+            font-size: 2vw;
+            text-align: left;
+            transition: all 0.5s ease-out;
+        }
+
+        .card p span {
+            font-size: 50px;
+            font-family: Arial;
+            float: left;
+            margin: 0px 10px;
+        }
+
+        .card #email {
+            padding: 5px;
+            border-radius: 3px;
+            border: 1px solid white;
+            box-shadow: 0px 0px 3px 0.5px rgba(127, 91, 34, 0.3);
+        }
+
+        .card p::selection {
+            color: yellow;
+            background-color: red;
+        }
+
+        .card h1 {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+    </style>
+
+    <div class="card">
+        <div>
+            <h1>samting</h1>
+        </div>
+        <div>
+            <p><span>L</span>orem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores ullam quae voluptate
+                veritatis
+                laudantium. Autem, quaerat voluptatem dolores, illum, labore aliquid a voluptate dolorum ipsa nam ad
+                necessitatibus hic culpa.
+                Ad officia tempora veritatis incidunt molestiae provident, iure, quasi ut a natus facilis, illo debitis
+                dignissimos. Inventore fugiat sint et repellendus hic, praesentium, dignissimos vitae nobis magnam
+                impedit
+                esse itaque.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <h1>E-Mail</h1>
+
+        <input type="email" name="email" id="email" placeholder="baraya harus memasukkan email disini...">
+    </div>
+
+</body>
+
+</html>

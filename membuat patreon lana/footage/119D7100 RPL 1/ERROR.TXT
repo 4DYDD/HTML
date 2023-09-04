@@ -1,0 +1,1 @@
+C:\WINDOWS\SYSTEM32\GIFTRANS.EXE: cannot open temp.gif: No such file or directory
