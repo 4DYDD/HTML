@@ -18,6 +18,7 @@ header.forEach(heder => {
         let contentp = content.querySelector('.content--p');
         let header_content = target.querySelector('.header--content');
 
+
         if (toggle === "samting") {
 
             card.style.height = '80vh';
@@ -33,23 +34,23 @@ header.forEach(heder => {
             header_content.style.height = '100%';
 
             if (header_content.classList.contains('AditP')) {
-                header_content.style.backgroundImage = "linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, rgba(169, 109, 32, 1))";
+                header_content.style.backgroundImage = "linear-gradient(to bottom, rgba(255, 255, 255, 0) 30%, rgba(169, 109, 32, 1))";
             }
 
             if (header_content.classList.contains('LanaP')) {
-                header_content.style.backgroundImage = "linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, rgba(28, 98, 70, 1))";
+                header_content.style.backgroundImage = "linear-gradient(to bottom, rgba(255, 255, 255, 0) 30%, rgba(28, 98, 70, 1))";
             }
 
             if (header_content.classList.contains('RafiP')) {
-                header_content.style.backgroundImage = "linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, rgba(83, 50, 21, 1))";
+                header_content.style.backgroundImage = "linear-gradient(to bottom, rgba(255, 255, 255, 0) 30%, rgba(83, 50, 21, 1))";
             }
 
             if (header_content.classList.contains('AndriaP')) {
-                header_content.style.backgroundImage = "linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, rgba(74, 189, 228, 1))";
+                header_content.style.backgroundImage = "linear-gradient(to bottom, rgba(255, 255, 255, 0) 30%, rgba(74, 189, 228, 1))";
             }
 
             if (header_content.classList.contains('QoriP')) {
-                header_content.style.backgroundImage = "linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, rgba(98, 40, 135, 1))";
+                header_content.style.backgroundImage = "linear-gradient(to bottom, rgba(255, 255, 255, 0) 30%, rgba(98, 40, 135, 1))";
             }
 
             toggle = "nating";
