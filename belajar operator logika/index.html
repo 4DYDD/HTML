@@ -13,6 +13,7 @@
     <div class="tumpukan">
         HITUNG
     </div>
+
     <div class="konten">
 
         <div class="kontennya header">
@@ -20,11 +21,11 @@
         </div>
         <div class="kontennya kolom1">
             <p>nilai kencangkalan</p>
-            <input type="text" name="kolom1" id="kolom1" class="kolom">
+            <input type="text" name="kolom1" id="kolom1" class="kolom" required>
         </div>
         <div class="kontennya kolom2">
             <p>nilai ngoding</p>
-            <input type="text" name="kolom2" id="kolom2" class="kolom">
+            <input type="text" name="kolom2" id="kolom2" class="kolom" required>
         </div>
 
         <div class="kontennya tombol">
@@ -32,6 +33,33 @@
             <button class="ulang">ulang</button>
         </div>
 
+    </div>
+
+    <div class="keterangan">
+        <h1>NILAI SISWA</h1>
+        <div class="keterangannya">00</div>
+    </div>
+
+    <div class="hasil">
+        <div class="hasilnya tepibawah">
+            <p>apakah nilai siswa >= 70 ?</p>
+            <input type="text" name="tepibawah" id="tepibawah" class="kolom" disabled>
+        </div>
+
+        <div class="hasilnya tepiatas">
+            <p>apakah nilai siswa <= 95 ?</p>
+                    <input type="text" name="tepiatas" id="tepiatas" class="kolom" disabled>
+        </div>
+
+        <div class="hasilnya and">
+            <p>2 kondisi terpenuhi ?</p>
+            <input type="text" name="and" id="and" class="kolom" disabled>
+        </div>
+
+        <div class="hasilnya or">
+            <p>1 atau 2 kondisi terpenuhi ?</p>
+            <input type="text" name="or" id="or" class="kolom" disabled>
+        </div>
     </div>
 
     <script src="script.js"></script>

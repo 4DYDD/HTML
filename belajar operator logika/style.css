@@ -52,17 +52,19 @@ button {
     -webkit-text-stroke: 2px orange;
 
     border-radius: 4px;
-    z-index: 2;
+    z-index: 4;
 
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 
-    transition: all 1s ease-out;
+    transition: all 0.8s ease-out;
 }
 
-.konten {
-    z-index: 1;
+.konten,
+.hasil,
+.keterangan {
+    z-index: 3;
     position: absolute;
 
     left: 50%;
@@ -82,15 +84,61 @@ button {
 
     border-radius: 4px;
     box-shadow: 0px 0px 5px 1px burlywood;
+    transition: all 1s ease-out;
 }
 
-.kontennya {
+.hasil {
+    z-index: 1;
+}
+
+.hasilnya p {
+    font-weight: bold;
+    color: var(--almond);
+    transition: all 0.5s ease-out;
+    text-align: center;
+    font-size: 3.5vw;
+}
+
+.hasilnya input {
+    transition: all 0.5s ease-out;
+
+    text-align: center;
+    padding: 5px;
+    width: 40%;
+
+    color: rgba(255, 255, 255, 0);
+
+    font-size: 3.5vw;
+
+    overflow: hidden;
+}
+
+.keterangan {
+    z-index: 2;
+}
+
+.keterangan h1 {
+    letter-spacing: 2px;
+}
+
+.keterangannya {
+    font-size: 10vw;
+    font-weight: bolder;
+    letter-spacing: 2px;
+
+    color: rgba(255, 255, 255, 0);
+    text-align: center;
+    transition: all 0.5s ease-out;
+}
+
+.kontennya,
+.keterangannya,
+.hasilnya {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 
-    height: 20%;
     width: 100%;
 }
 
@@ -98,7 +146,8 @@ button {
     height: 7vh;
 }
 
-.kolom1 {
+.kolom1,
+.hasilnya {
     width: 95%;
     justify-content: space-between;
     height: 7vh;
@@ -138,7 +187,8 @@ button {
 }
 
 .kontennya button,
-.kontennya input {
+.kontennya input,
+.hasilnya input {
     box-shadow: 0px 0px 3px 0.5px burlywood;
     border: none;
     border-radius: 3px;
