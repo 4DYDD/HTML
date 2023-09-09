@@ -20,7 +20,7 @@ body {
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
 
     overflow: hidden;
 
@@ -118,6 +118,7 @@ button {
 }
 
 .keterangan h1 {
+    color: var(--almond);
     letter-spacing: 2px;
 }
 
@@ -128,7 +129,7 @@ button {
 
     color: rgba(255, 255, 255, 0);
     text-align: center;
-    transition: all 0.5s ease-out;
+    transition: all 0.3s ease-out;
 }
 
 .kontennya,
@@ -189,6 +190,8 @@ button {
 .kontennya button,
 .kontennya input,
 .hasilnya input {
+    text-align: center;
+
     box-shadow: 0px 0px 3px 0.5px burlywood;
     border: none;
     border-radius: 3px;
@@ -198,4 +201,47 @@ button {
 .kontennya input:focus {
     border: none;
     outline: none;
+}
+
+@media (min-width: 580px) {
+
+    .tumpukan,
+    .konten,
+    .hasil,
+    .keterangan {
+        width: 80vw;
+        height: 31vh;
+    }
+
+    .kontennya button,
+    .kontennya input,
+    .kontennya p,
+    .hasilnya p,
+    .hasilnya input {
+        font-size: 2.5vw;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    .tumpukan,
+    .konten,
+    .hasil,
+    .keterangan {
+        width: 80vw;
+        height: 30vh;
+    }
+
+    .tumpukan {
+        font-size: 15vw;
+    }
+
+    .kontennya button,
+    .kontennya input,
+    .kontennya p,
+    .hasilnya p,
+    .hasilnya input {
+        font-size: 2vw;
+    }
+
 }

@@ -166,7 +166,7 @@ ulang.addEventListener('click', () => {
         keterangannya.style.color = "rgba(255, 255, 255, 0)";
 
         setTimeout(() => {
-            keterangannya.innerText = "";
+            keterangannya.innerText = "00";
             kolom1.value = 'masukkan nilai pertama';
             kolom2.value = 'masukkan nilai kedua';
             kolom1.style.color = "rgba(162, 120, 66, 1)";
@@ -183,10 +183,13 @@ ulang.addEventListener('click', () => {
 hitung.addEventListener('click', () => {
     let hasilajah = parseInt(kolom1.value) + parseInt(kolom2.value);
     let hasilhitung = hasilajah / 2;
-    alert(hasilhitung);
 
-    keterangannya.innerText = hasilhitung.toString();
-    keterangannya.style.color = "rgba(162, 120, 66, 1)";
+    keterangannya.style.color = "rgba(255,255,255,0)";
+    setTimeout(() => {
+        keterangannya.innerText = hasilhitung.toString();
+        keterangannya.style.color = "rgba(162, 120, 66, 1)";
+    }, 300);
+
     setTimeout(() => {
 
         if (hasilhitung > 70) {
@@ -235,7 +238,7 @@ hitung.addEventListener('click', () => {
             setTimeout(() => {
                 tepiatas.value = "nilai diatas 95";
                 tepiatas.style.color = "rgba(255,255,255, 1)";
-                tepiatas.style.backgroundColor = "lightgreen";
+                tepiatas.style.backgroundColor = "orange";
             }, 300);
         }
 
